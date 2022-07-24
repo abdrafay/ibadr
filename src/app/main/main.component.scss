@@ -1,0 +1,18 @@
+$main_color: #016944;
+.main_sec {
+  padding: 20px 0;
+  .title_name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(0, 74, 141);
+    margin: 0;
+  }
+}
+
+.t_link {
+  font-size: 17px;
+  color: $main_color;
+}
+p {
+  font-size: 17px;
+}

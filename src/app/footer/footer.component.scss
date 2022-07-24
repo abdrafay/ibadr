@@ -1,0 +1,42 @@
+$main_color: #016944;
+footer {
+  .footer-top {
+    padding: 20px 0;
+    background-color: #eee;
+    h2 {
+      line-height: 1;
+      a {
+        color: $main_color;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 50px 0;
+    position: relative;
+    background: url(../../assets/images/arrow.png) no-repeat bottom right $main_color;
+    @media screen and (min-width: 992px ) {
+      .logo {
+        width: 180px;
+      }
+    }
+    .logo {
+
+    }
+    .logoCol {
+      text-align: end;
+    padding: 20px;
+    }
+
+
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

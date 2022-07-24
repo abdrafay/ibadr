@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+$main : #fff;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media (min-width: 1400px) {
+  .container  {
+    max-width: 1200px !important;
+  }
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #016944 !important;
+  height: 100%;
+  z-index: -1;
+}
+.mat-tab-label-active {
+  opacity: 1 !important;
+  .mat-tab-label-content {
+    color: #fff !important;
+  z-index: 1;
+
+  }
+}
+.mat-tab-body-content {
+  border: 1px solid #cacaca;
+  padding: 10px 20px;
+}
+.mat-tab-label {
+  padding: 0 !important;
+  background-color:#f9f9f9 ;
+  border: 1px solid #cacaca;
+  border-bottom: 0;
+}
+.mat-tab-header {
+  border-bottom: 0 !important;
+}
+.mat-tab-header-pagination.mat-tab-header-pagination-disabled {
+  display: none !important;
+}
+@media screen and (max-width: 992px) {
+  .mat-tab-labels {
+    display: block !important;
+  }
+  .mat-tab-label {
+    width: 100% !important;
+  }
+  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    height: 0 !important;
+  }
+
+}
+.mat-tab-label-active {
+  background-color: #016944 !important;
+  .mat-tab-label-content {
+    z-index: 1;
+  }
+}

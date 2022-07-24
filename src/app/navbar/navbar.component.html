@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/yorku-logo.jpg" class="logo" alt="" />
+    </a>
+    <div class="" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown px-1">
+          <a
+            class="nav-link dropdown-toggle active drp-link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Popular Links
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item px-1">
+          <a
+            (click)="vc(src)"
+            #search
+            class="nav-link active srcBut"
+            aria-current="page"
+            href="javascript:void()"
+            ><mat-icon fontIcon="search"></mat-icon
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- search Bar -->
+<div class="searchBar" #src>
+  <a
+    (click)="vc(src)"
+    class="nav-link active srcBut closeBtn"
+    aria-current="page"
+    href="javascript:void()"
+    ><mat-icon fontIcon="close"></mat-icon
+  ></a>
+  <div class="form-group">
+    <input type="text" placeholder="search" />
+    <button type="submit">
+      <mat-icon fontIcon="search"></mat-icon>
+    </button>
+  </div>
+</div>
